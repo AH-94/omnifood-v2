@@ -1,0 +1,40 @@
+.delivered-meals {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+
+    @mixin mediumScreens {
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    &__images {
+
+        display: flex;
+
+        img {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            border: 3px solid $colorGrayOne;
+            margin-right: -1rem;
+        }
+
+        img:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__text {
+        font-size: 1.125rem;
+        font-weight: 600;
+
+        span {
+            color: $colorOrange;
+            font-weight: 700;
+        }
+    }
+}

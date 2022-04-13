@@ -1,0 +1,31 @@
+.columns {
+
+    display: grid;
+
+    &--hero {
+        grid-template-columns: repeat(2, 1fr);
+
+        @mixin mediumScreens {
+            grid-template-columns: 1fr;
+            padding: 0 5rem;
+        }
+
+        @mixin extraSmallScreens {
+            padding: 0 2rem;
+        }
+    }
+
+    &--gap {
+        column-gap: 4rem;
+        row-gap: 6rem;
+
+        @mixin largeScreens {
+            column-gap: 3rem;
+            row-gap: 4rem;
+        }
+
+        @mixin extraSmallScreens {
+            row-gap: 3rem;
+        }
+    }
+}

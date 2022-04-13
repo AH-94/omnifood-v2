@@ -1,0 +1,37 @@
+.large-hero {
+
+    &__title {
+        font-size: 3.25rem;
+        font-weight: 700;
+        color: $colorHeading;
+        letter-spacing: -0.5px;
+        line-height: 1.05;
+        margin-bottom: 3.2rem;
+
+        @mixin extraLargeScreens {
+            font-size: 2.75rem;
+        }
+    }
+
+    &__description {
+        font-size: 1.25rem;
+        line-height: 1.6;
+        margin-bottom: 3rem;
+    }
+
+    @mixin mediumScreens {
+        &__text-box {
+            text-align: center;
+        }
+
+        &__image {
+            width: 60%;
+            margin: auto;
+
+            @mixin extraSmallScreens {
+                width: 80%;
+            }
+        }
+    }
+
+}

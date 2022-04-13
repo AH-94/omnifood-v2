@@ -1,0 +1,29 @@
+@define-mixin extraLargeScreens {
+    @media (max-width: 84rem) {
+        @mixin-content;
+    }
+}
+
+@define-mixin largeScreens {
+    @media (max-width: 75rem) {
+        @mixin-content;
+    }
+}
+
+@define-mixin mediumScreens {
+    @media (max-width: 59rem) {
+        @mixin-content;
+    }
+}
+
+@define-mixin smallScreens {
+    @media (max-width: 44rem) {
+        @mixin-content;
+    }
+}
+
+@define-mixin extraSmallScreens {
+    @media (max-width: 34rem) {
+        @mixin-content;
+    }
+}

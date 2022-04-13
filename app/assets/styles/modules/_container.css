@@ -1,0 +1,10 @@
+.container {
+
+    max-width: 77rem;
+    margin: 0 auto;
+    padding: 0 1.125rem;
+
+    @mixin extraLargeScreens {
+        max-width: 67rem;
+    }
+}

@@ -1,0 +1,11 @@
+.page-section {
+
+    &--hero {
+        background-color: $colorOrangeLighter;
+        padding: 3rem 0 6rem;
+
+        @mixin extraSmallScreens {
+            padding: 1.5rem 0 4rem;
+        }
+    }
+}

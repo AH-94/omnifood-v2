@@ -1,0 +1,46 @@
+.btn {
+
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 9px;
+    transition: all 0.3s;
+
+    @mixin extraSmallScreens {
+        padding: 1.5rem 1rem;
+    }
+
+    &--full {
+        background-color: $colorOrange;
+        color: $colorWhite;
+
+        &:hover,
+        &:active {
+            background-color: $colorOrangeDark;
+        }
+    }
+
+    &--outline {
+        background-color: $colorWhite;
+        color: $colorMain;
+
+        &:hover,
+        &:active {
+            background-color: $colorGrayOne;
+            box-shadow: inset 0 0 0 3px $colorWhite;
+        }
+    }
+
+    &--m-right-sm {
+        margin-right: 0.9375rem;
+
+        @mixin extraSmallScreens {
+            margin-right: 0;
+            margin-bottom: 0.9375rem;
+        }
+    }
+}
