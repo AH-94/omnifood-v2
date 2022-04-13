@@ -1,0 +1,16 @@
+.header {
+    background-color: $colorOrangeLighter;
+    height: 6rem;
+    padding: 0 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @mixin largeScreens {
+        padding: 0 1.125rem;
+    }
+
+    &__logo {
+        height: 1.3rem;
+    }
+}

@@ -43,4 +43,26 @@
             margin-bottom: 0.9375rem;
         }
     }
+
+    &--main-nav {
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1000;
+        display: none;
+
+        &__icon {
+            width: 3rem;
+            height: 3rem;
+            color: $colorHeading;
+        }
+
+        &__icon[name="close-outline"] {
+            display: none;
+        }
+
+        @mixin mediumScreens {
+            display: block;
+        }
+    }
 }

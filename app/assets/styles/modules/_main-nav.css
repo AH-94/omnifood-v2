@@ -1,0 +1,66 @@
+.main-nav {
+
+    @mixin mediumScreens {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.97);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(100%);
+        transition: all 0.5s ease-in;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+
+        @mixin largeScreens {
+            gap: 2rem;
+        }
+
+        @mixin mediumScreens {
+            flex-direction: column;
+            gap: 3rem;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: $colorHeading;
+        transition: all 0.3s;
+
+        @mixin mediumScreens {
+            font-size: 1.875rem;
+        }
+
+        &:hover,
+        &:active {
+            color: $colorOrangeDark;
+        }
+
+        &--cta {
+            background-color: $colorOrange;
+            color: $colorWhite;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9px;
+
+            &:hover,
+            &:active {
+                background-color: $colorOrangeDark;
+                color: $colorWhite;
+            }
+        }
+    }
+}
