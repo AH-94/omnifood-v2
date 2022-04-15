@@ -1,0 +1,18 @@
+.heading {
+
+    &--featured-in {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: $colorGrayTwo;
+        text-transform: uppercase;
+        letter-spacing: 0.75px;
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+    &--mb-sm {
+        margin-bottom: 1.5rem;
+    }
+}
