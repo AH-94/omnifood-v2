@@ -8,11 +8,58 @@
         letter-spacing: 0.75px;
     }
 
+    &--sub {
+        display: block;
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.75px;
+        color: $colorOrangeDark;
+    }
+
+    &--secondary {
+        font-size: 2.75rem;
+        font-weight: 700;
+        color: $colorHeading;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+
+        @mixin largeScreens {
+            font-size: 2.25rem;
+        }
+    }
+
+    &--tertiary {
+        font-size: 1.875rem;
+        line-height: 1.2;
+        color: $colorHeading;
+
+        @mixin largeScreens {
+            font-size: 1.5rem;
+        }
+    }
+
     &--center {
         text-align: center;
     }
 
+    &--mb-lg {
+        margin-bottom: 6rem;
+
+        @mixin smallScreens {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &--mb-md {
+        margin-bottom: 2rem;
+    }
+
     &--mb-sm {
         margin-bottom: 1.5rem;
+    }
+
+    &--mb-xs {
+        margin-bottom: 1rem;
     }
 }

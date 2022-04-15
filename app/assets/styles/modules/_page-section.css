@@ -12,4 +12,8 @@
     &--featured {
         padding: 3rem 0 2rem 0;
     }
+
+    &--how {
+        padding: 6rem 0;
+    }
 }
