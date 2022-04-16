@@ -1,0 +1,74 @@
+.meal {
+
+    overflow: hidden;
+    border-radius: 11px;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.4s;
+
+    &:hover {
+        transform: translateY(-0.75rem);
+        box-shadow: 0 2rem 4.25rem rgba(0, 0, 0, 0.06);
+    }
+
+    &__content {
+        padding: 2rem 3rem 3rem;
+
+        @mixin mediumScreens {
+            padding: 1.5rem 2rem 2rem;
+        }
+    }
+
+    &__tags {
+        margin-bottom: 0.75rem;
+        display: flex;
+        gap: 0.25rem;
+    }
+
+    &__tag {
+        display: inline-block;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: $colorHeading;
+        text-transform: uppercase;
+        border-radius: 100vmax;
+
+        &--vegetarian {
+            background-color: $colorLime;
+        }
+
+        &--vegan {
+            background-color: $colorLimeLighter;
+        }
+
+        &--paleo {
+            background-color: $colorMustard;
+        }
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $colorHeading;
+        margin-bottom: 2rem;
+    }
+
+    &__attributes {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    &__attribute {
+        font-size: 1.125rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__icon {
+        font-size: 1.5rem;
+        color: $colorOrange;
+    }
+}

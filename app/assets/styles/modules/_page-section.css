@@ -13,7 +13,28 @@
         padding: 3rem 0 2rem 0;
     }
 
-    &--how {
+    &--how,
+    &--meals {
         padding: 6rem 0;
+    }
+
+    &--meals__all-recipes {
+        font-size: 1.125rem;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: $colorOrange;
+            padding-bottom: 2px;
+            border-bottom: 1px solid currentColor;
+            transition: all 0.3s;
+
+            &:hover,
+            &:active {
+                color: $colorOrangeDark;
+                border-bottom-color: transparent;
+            }
+        }
     }
 }

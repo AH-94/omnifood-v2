@@ -23,6 +23,22 @@
         }
     }
 
+    &--span-3 {
+        grid-template-columns: repeat(3, 1fr);
+
+        @mixin smallScreens {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @mixin extraSmallScreens {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &--mb-md {
+        margin-bottom: 3rem;
+    }
+
     &--align-center {
         align-items: center;
     }
