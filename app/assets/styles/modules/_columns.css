@@ -35,6 +35,14 @@
         }
     }
 
+    &--testimonials {
+        grid-template-columns: 55% 45%;
+
+        @mixin mediumScreens {
+            grid-template-columns: 1fr;
+        }
+    }
+
     &--mb-md {
         margin-bottom: 3rem;
     }

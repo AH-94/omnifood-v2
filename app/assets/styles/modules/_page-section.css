@@ -37,4 +37,8 @@
             }
         }
     }
+
+    &--testimonials {
+        background-color: $colorOrangeLighter;
+    }
 }

@@ -1,0 +1,29 @@
+.gallery {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+
+    @mixin mediumScreens {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    @mixin extraSmallScreens {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__item {
+        overflow: hidden;
+
+        img {
+            transition: all 0.4s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        
+    }
+}
