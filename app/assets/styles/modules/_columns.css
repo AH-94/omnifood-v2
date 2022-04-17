@@ -35,6 +35,18 @@
         }
     }
 
+    &--span-4 {
+        grid-template-columns: repeat(4, 1fr);
+
+        @mixin smallScreens {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @mixin extraSmallScreens {
+            grid-template-columns: 1fr;
+        }
+    }
+
     &--testimonials {
         grid-template-columns: 55% 45%;
 
