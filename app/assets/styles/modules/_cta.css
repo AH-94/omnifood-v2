@@ -1,0 +1,86 @@
+.cta {
+    background-color: $colorOrange;
+    background-image: linear-gardient(to right bottom, $colorOrangeSecondary, $colorOrange);
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.015);
+    border-radius: 11px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    @mixin mediumScreens {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    @mixin extraSmallScreens {
+        grid-template-columns: 1fr;
+    }
+
+    &__textbox {
+        color: $colorOrangeVryDark;
+        padding: 3rem 4rem 4rem;
+
+        @mixin extraSmallScreens {
+            padding: 1.5rem 2rem 2rem;
+        }
+    }
+
+    .heading--secondary {
+        color: inherit;
+    }
+
+    &__text {
+        font-size: 1.125rem;
+        line-height: 1.8;
+        margin-bottom: 3rem;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        row-gap: 1.5rem;
+
+        @mixin mediumScreens {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__form-label {
+        display: block;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 0.75rem;
+    }
+
+    &__form-field {
+        width: 100%;
+        border: none;
+        font-family: inherit;
+        color: inherit;
+        padding: 0.75rem;
+        font-size: 1.125rem;
+        background-color: $colorOrangeLighter;
+        border-radius: 9px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+        &::placeholder {
+            color: $colorPlaceholder;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 0.5rem rgba(253, 242, 233, 0.5);
+        }
+    }
+
+    &__image-box {
+        background-image: linear-gradient(to right bottom, rgba(235, 152, 78, 0.35), rgba(230, 126, 34, 0.35)), url('../images/eating.jpg');
+        background-size: cover;
+        background-position: center;
+
+        @mixin extraSmallScreens {
+            padding-bottom: 100%;
+            grid-row: 1;
+        }
+    }
+}

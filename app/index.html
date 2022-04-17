@@ -305,7 +305,7 @@
             </div>
         </section>
 
-        <section class="page-section--pricing">
+        <section class="page-section--pricing" id="pricing">
             <div class="container">
                 <span class="heading--sub heading--center heading--mb-xs">Pricing</span>
                 <h2 class="heading--secondary heading--center heading--mb-lg">Eating well without breaking the bank</h2>
@@ -389,6 +389,40 @@
                         <p class="feature__title">Pause anytime</p>
                         <p class="feature__text">Going on vacation? Just pause your subscription, and we refund unused days.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section--cta" id="cta">
+            <div class="container">
+                <div class="cta">
+                    <div class="cta__textbox">
+                        <h2 class="heading--secondary heading--mb-md">Get your first meal for free!</h2>
+                        <p class="cta__text">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!</p>
+                        <form action="#" class="cta__form">
+                            <div>
+                                <label class="cta__form-label" for="f-name">First name</label>
+                                <input class="cta__form-field" type="text" name="f-name" id="f-name" placeholder="John Smith" required>
+                            </div>
+                            <div>
+                                <label class="cta__form-label" for="email">Email address</label>
+                                <input class="cta__form-field" type="email" name="email" id="email" placeholder="me@emailaddress.com" required>
+                            </div>
+                            <div>
+                                <label for="select-where" class="cta__form-label">Where did you hear about us?</label>
+                                <select class="cta__form-field" name="select-where" id="select-where">
+                                    <option value="">Please choose one option</option>
+                                    <option value="friends">Friends</option>
+                                    <option value="YouTube">YouTube</option>
+                                    <option value="podcats">Podcast</option>
+                                    <option value="Facebook ad">Facebook ad</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <button class="btn btn--form">Signup now</button>
+                        </form>
+                    </div>
+                    <div class="cta__image-box" role="img" aria-label="Woman enjoying food"></div>
                 </div>
             </div>
         </section>

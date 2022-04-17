@@ -65,4 +65,17 @@
             display: block;
         }
     }
+
+    &--form {
+        background-color: $colorOrangeVryDark;
+        color: $colorOrangeLighter;
+        padding: 0.75rem;
+        align-self: end;
+
+        &:hover,
+        &:active {
+            background-color: $colorWhite;
+            color: $colorMain;
+        }
+    }
 }

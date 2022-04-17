@@ -42,4 +42,8 @@
     &--testimonials {
         background-color: $colorOrangeLighter;
     }
+
+    &--cta {
+        padding: 3rem 0 8rem;
+    }
 }
