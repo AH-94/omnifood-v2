@@ -51,6 +51,7 @@
         z-index: 1000;
         display: none;
 
+
         &__icon {
             width: 3rem;
             height: 3rem;
@@ -63,6 +64,17 @@
 
         @mixin mediumScreens {
             display: block;
+
+            &--show-menu {
+
+                .btn--main-nav__icon[name="menu-outline"] {
+                    display: none;
+                }
+    
+                .btn--main-nav__icon[name="close-outline"] {
+                    display: block;
+                }
+            }
         }
     }
 

@@ -15,6 +15,13 @@
         pointer-events: none;
         transform: translateX(100%);
         transition: all 0.5s ease-in;
+
+        &--open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+            transform: translateX(0);
+        }
     }
 
     &__list {
