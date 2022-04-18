@@ -76,4 +76,12 @@
             row-gap: 3rem;
         }
     }
+
+    &--footer {
+        grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+
+        @mixin smallScreens {
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
 }

@@ -1,0 +1,81 @@
+.footer {
+
+    &__logo-col {
+        display: flex;
+        flex-direction: column;
+
+        @mixin smallScreens {
+            grid-column: span 3;
+        }
+    }
+
+    @mixin smallScreens {
+        &__address-col {
+            grid-column: span 3;
+        }
+    }
+
+    @mixin smallScreens {
+        &__nav-col {
+            grid-row: 1;
+            grid-column: span 2;
+        }
+    }
+
+    &__heading {
+        font-size: 1.125rem;
+        font-weight: 500;
+        margin-bottom: 2.5rem;
+    }
+
+    &__nav {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 1rem;
+        color: $colorFooterLink;
+        transition: all 0.3s;
+
+        &:hover,
+        &:active {
+            color: $colorMain;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 2rem;
+    }
+
+    &__social-links {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    &__social-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    &__contacts {
+        font-style: normal;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    &__address {
+        margin-bottom: 1.5rem;
+    }
+
+    &__copyright {
+        margin-top: auto;
+        font-size: 0.875rem;
+        color: $colorFooterLink;
+        line-height: 1.6;
+    }
+}

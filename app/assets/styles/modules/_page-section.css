@@ -46,4 +46,9 @@
     &--cta {
         padding: 3rem 0 8rem;
     }
+
+    &--footer {
+        padding: 8rem 0;
+        border-top: 1px solid $colorFooter;
+    }
 }
