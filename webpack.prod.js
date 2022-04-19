@@ -9,7 +9,7 @@ const fse = require('fs-extra');
 const postcssPlugins = [
     require('postcss-import'),
     require('postcss-nested'),
-    require('pstcss-simple-vars'),
+    require('postcss-simple-vars'),
     require('postcss-mixins'),
     require('autoprefixer')
 ]
