@@ -16,7 +16,7 @@ const postcssPlugins = [
 
 class RunAfterCompile {
     apply(compiler) {
-        compiler.done.hooks.tap('Copy images', function() {
+        compiler.hooks.done.tap('Copy images', function() {
             fse.copySync('./app/assets/images', './docs/assets/images');
         })
     }
@@ -40,13 +40,13 @@ module.exports = merge(common, {
         rules: [
             {
                 test: /\.css$/i,
-                use: ['style-loader', 'css-loader', {loader: 'postcss-loader', options: {postcssOptions: {plugins: postcssPlugins}}}]
+                use: ['style-loader', 'css-loader?url=false', {loader: 'postcss-loader', options: {postcssOptions: {plugins: postcssPlugins}}}]
             },
             {
                 test: /\.js$/,
                 exclude: /(node_modules)/,
                 use: {
-                    loader: 'bael-loader',
+                    loader: 'babel-loader',
                     options: {
                         presets: ['@babel/preset-env']
                     }
