@@ -40,7 +40,7 @@ module.exports = merge(common, {
         rules: [
             {
                 test: /\.css$/i,
-                use: ['style-loader', 'css-loader', {loader: 'postcss-loader', options: {postcssOptions: {plugins: postcssPlugins}}}]
+                use: [MiniCssExtractPlugin.loader, 'css-loader', {loader: 'postcss-loader', options: {postcssOptions: {plugins: postcssPlugins}}}]
             },
             {
                 test: /\.js$/,
